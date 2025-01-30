@@ -1,27 +1,27 @@
 body {
-    background: #462521;
+    background: #5A5766;
     min-height: 100vh;
     text-align: center;
     
 }
 
 h1, h2 {
-    color: #8A6552;
+    color: #9792E3;
     font-family: "Roboto", serif;
     text-align: center;
 
 }
 
 a {
-    color: #fdf7fa;
-    font-family: "Inter", serif;
+    color: #EDFFEC;
+    font-family: "Lato", sans-serif;
     padding: 8px;
-    background-color: #3f220f;
+    background-color: #48435C;
     text-decoration: none;
 }
 
 a:hover {
-    color: #BDB246;
+    color: #61E786;
 }
 
 #home {
@@ -29,13 +29,13 @@ a:hover {
 }
 
 p {
-    color: #FFE0B5; 
-    font-family: "Inter", serif;
+    color: #9792e3; 
+    font-family: "Lato", sans-serif;
 }
 
 p a {
-    color: #CA2E55;
-    background-color: #462521;
+    color: #61E786;
+    background-color: #5A5766;
     padding: 0px;
 }
 
@@ -44,8 +44,8 @@ p a:hover {
 }
 
 footer {
-    color: #fdf7fa;
-    font-family: "Inter", serif;
+    color: #61E786;
+    font-family: "Lato", sans-serif;
     text-align: center;
     position: sticky;
     top: 100%;
@@ -55,21 +55,22 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    color: #ffe0b5;
+    color: #9792e3;
     font-family: "Inter", serif;
 }
 
 li {
     display: inline;
+    font-family: "Lato", sans-serif;
 }
 
 figcaption {
-    color: #bdb246;
+    color: #61E786;
     font-family: "Inter", serif;
 }
 
 ol {
-    color: #ffe0b5; 
+    color: #9792e3; 
 }
 
 .introduction {
