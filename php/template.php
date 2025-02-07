@@ -10,15 +10,15 @@
     <script src="https://lint.page/kit/880bd5.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	<div data-include="./components/header.html"></div>
+	<?php include 'components/header.php'; ?>
 		<main>
 			<h2>Template Page  - CHANGE TO PAGE NAME </h2> <!-- change to page name -->
 			<!-- <img src="images/" alt="img desc here"> find image later-->
 				<p>This is a Template page. I've built it so that I can easily copy it and then just change the contents to match the page I'm working on. </p>
 				<p>This is a 2nd sample paragraph for the template page. I'll change it or delete it depending on the assignment I create from it. </p>
 		</main>
-		<div data-include="./components/footer.html"></div>
+		<?php include 'components/footer.php'; ?>
 		<!-- <script src="/scripts/script.js"></script> -->
-		<script src="./scripts/HTMLInclude.min.js"></script>
+		
 </body>
 </html>

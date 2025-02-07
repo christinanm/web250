@@ -11,7 +11,7 @@
     <script src="https://lint.page/kit/880bd5.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	<div data-include="./components/header.html"></div>
+	<?php include 'components/header.php'; ?>
 		<main>
 			<h2> Contract </h2> <!-- change to page name -->
 			<!-- <img src="images/" alt="img desc here"> find image later-->
@@ -34,8 +34,7 @@
               <p>As such, failure to turn in assignments may show as absences.</p>
               <p>Signed: <i>Christina N. Mekheil, 18 January 2025</i></p>
 		</main>
-		<div data-include="./components/footer.html"></div>
+		<?php include 'components/footer.php'; ?>
 		<!-- <script src="/scripts/script.js"></script> -->
-		<script src="./scripts/HTMLInclude.min.js"></script>
 </body>
 </html>
