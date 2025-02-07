@@ -12,7 +12,7 @@
     <script src="https://lint.page/kit/880bd5.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	<div data-include="./components/header.html"></div>
+	<?php include 'components/header.php'; ?>
 		<main>
 			<h2>Home</h2>
 			<!-- <img src="images/" alt="img desc here"> find image later-->
@@ -21,8 +21,8 @@
 					<p>This page consists of all my projects from my Database Driven Websites class, WEB250.</p>
 					<p>To learn more about me, check out my <a href="introduction.html">introduction!</a></p>
 		</main>
-		<div data-include="./components/footer.html"></div>
+		<?php include 'components/footer.php'; ?>
 		<!-- <script src="/scripts/script.js"></script> -->
-		<script src="./scripts/HTMLInclude.min.js"></script>
+		
 </body>
 </html>
