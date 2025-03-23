@@ -14,25 +14,28 @@
 	</a>
 	<br />
 	
-	<a href = "?p=home.php">home</a> | 
-	<a href = "?p=alpha.php">alpha</a> | 
-	<a href = "?p=bravo.php">bravo</a> | 
-	<a href = "?p=charlie.php">charlie</a> | 
-	<a href = "?p=delta.php">delta</a> | 
-	<a href = "?p=echo.php">echo</a>
+	<a href = "?p=home">home</a> | 
+	<a href = "?p=alpha">alpha</a> | 
+	<a href = "?p=bravo">bravo</a> | 
+	<a href = "?p=charlie">charlie</a> | 
+	<a href = "?p=delta">delta</a> | 
+	<a href = "?p=echo">echo</a>
 
 
 
 </header>
 <hr />
-<!-- dynamic content goes here -->
 
 <?php
-	$sPage = $_GET["p"];
-	//echo ("You picked the page: " . $sPage); 
-	
-	if($sPage == "") {  $sPage = "home.php"; }
-	include($sPage);
+	 if (isset( $_GET["p"])) 
+	 {
+		 $sPage = $_GET["p"] . ".php";
+	 }
+	 else
+	 {
+		 $sPage = "home.php";
+	 }
+	 include($sPage);
 ?>
 
 
