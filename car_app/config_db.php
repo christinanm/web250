@@ -1,4 +1,4 @@
- <?php
+<?php
 
 $local = true;
 if ($local == true) {

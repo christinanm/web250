@@ -4,7 +4,7 @@
  * Demonstrates how to create a database, create a table, and insert records.
  */
 
-$mysqli = new mysqli('mySQL', 'root', 'verysecret' );
+$mysqli = new mysqli('localhost', 'root');
 
 
    if (!$mysqli) { 
@@ -13,7 +13,7 @@ $mysqli = new mysqli('mySQL', 'root', 'verysecret' );
   echo 'Connected successfully to mySQL. <BR>'; 
   
 
-/* Create table doesn't return a resultset */
+/* Create table doesn't return a resultset 
 if ($mysqli->query("CREATE DATABASE Cars") === TRUE) {
     echo "<p>Database Cars created</P>";
 }
@@ -21,11 +21,18 @@ else
 {
     echo "Error creating Cars database: " . mysqli_connect_error()."<br>";
 }
+*/
+
+if ($mysqli->query("CREATE DATABASE IF NOT EXISTS Cars") === TRUE) {
+    echo "<p>Databse Cars is working!</P>";
+}
+
+
 //select a database to work with
 $mysqli->select_db("Cars");
    Echo ("Selected the Cars database");
 
-$query = " CREATE TABLE inventory 
+$query = " CREATE TABLE IF NOT EXISTS inventory 
 ( VIN varchar(17) PRIMARY KEY, YEAR INT, Make varchar(50), Model varchar(100), 
 TRIM varchar(50), EXT_COLOR varchar (50), INT_COLOR varchar (50), ASKING_PRICE DECIMAL (10,2), 
 SALE_PRICE DECIMAL (10,2), PURCHASE_PRICE DECIMAL (10,2), MILEAGE int, TRANSMISSION varchar (50), 
@@ -41,15 +48,16 @@ else
 {
     echo "<p>Error: </p>" . $mysqli->error;
 }
+
 // Dates are stored in MySQL as 'YYYY-MM-DD' format
-$query = "INSERT INTO `Cars`.`inventory` 
+$query = "INSERT IGNORE INTO `Cars`.`inventory` 
 (`VIN`, `YEAR`, `Make`, `Model`, `TRIM`, `EXT_COLOR`, `INT_COLOR`, `ASKING_PRICE`, `SALE_PRICE`, `PURCHASE_PRICE`, `MILEAGE`, `TRANSMISSION`, `PURCHASE_DATE`, `SALE_DATE`) 
 VALUES 
 ('5FNYF4H91CB054036', '2012', 'Honda', 'Pilot', 'Touring', 'White Diamond Pearl', 'Leather', '37807', NULL, '34250', '7076', 'Automatic', '2012-11-08', NULL);";
 
 
 if ($mysqli->query($query) === TRUE) {
-    echo "<p>Honda Pilot inserted into inventory table. </p>";
+    echo "<p>If it was not already there, Honda Pilot has inserted into inventory table. </p>";
 }
 else
 {
@@ -61,13 +69,13 @@ else
 
 // Insert a Dodge Durango
 
-$query = "INSERT INTO `Cars`.`inventory` (`VIN`, `YEAR`, `Make`, `Model`, `TRIM`, `EXT_COLOR`, `INT_COLOR`, `ASKING_PRICE`, `SALE_PRICE`, `PURCHASE_PRICE`, `MILEAGE`, `TRANSMISSION`, `PURCHASE_DATE`, `SALE_DATE`) 
+$query = "INSERT IGNORE INTO `Cars`.`inventory` (`VIN`, `YEAR`, `Make`, `Model`, `TRIM`, `EXT_COLOR`, `INT_COLOR`, `ASKING_PRICE`, `SALE_PRICE`, `PURCHASE_PRICE`, `MILEAGE`, `TRANSMISSION`, `PURCHASE_DATE`, `SALE_DATE`) 
 VALUES 
 ('LAKSDFJ234LASKRF2', '2009', 'Dodge', 'Durango', 'SLT', 'Silver', 'Black', '2700', NULL, '2000', '144000', '4WD Automatic', '2012-12-05', NULL);";
 
 
 if ($mysqli->query($query) === TRUE) {
-    echo "<p>Dodge Durango inserted into inventory table.</p>";
+    echo "<p>If it was not already there, Dodge Durango has been inserted into inventory table.</p>";
 }
 else
 {
@@ -78,7 +86,7 @@ else
 }
 
 // Insert 27 other cars
-$query3 = "INSERT INTO `Cars`.`inventory` (`VIN`, `YEAR`, `Make`, `Model`, `TRIM`, `EXT_COLOR`, `INT_COLOR`, `ASKING_PRICE`, `SALE_PRICE`, `PURCHASE_PRICE`, `MILEAGE`, `TRANSMISSION`, `PURCHASE_DATE`, `SALE_DATE`)
+$query3 = "INSERT IGNORE INTO `Cars`.`inventory` (`VIN`, `YEAR`, `Make`, `Model`, `TRIM`, `EXT_COLOR`, `INT_COLOR`, `ASKING_PRICE`, `SALE_PRICE`, `PURCHASE_PRICE`, `MILEAGE`, `TRANSMISSION`, `PURCHASE_DATE`, `SALE_DATE`)
  VALUES
 ('1FAFP44423F44657', 2003, 'Ford', 'Mustang', 'Base', 'Silver / Black', 'Gray', 8995, NULL, 6746, 75820, 'Automatic', '2013-01-14', NULL),
 ('2G1WD58C47917903', 2007, 'Chevrolet', 'Impala', 'SS', 'Gray', 'Gray', 9995.00, NULL, 7496, 129108, '4-Speed Automatic', '2013-01-14', NULL),
@@ -111,7 +119,7 @@ $query3 = "INSERT INTO `Cars`.`inventory` (`VIN`, `YEAR`, `Make`, `Model`, `TRIM
 ('YV4SZ592561219696', 2006, 'Volvo', 'XC70', 'AWD', 'Willow Green Metallic', 'Taupe Leather', 14996, NULL, 11247, 83664, '5-Speed Automatic w/ Geartronic', '2013-01-14', NULL);
 ";
 if ($mysqli->query($query3) === TRUE) {
-    echo "<p>27 cars inserted into inventory table.</p>";
+    echo "<p>If they were not already there, 27 cars have been inserted into inventory table.</p>";
 }
 else
 {
