@@ -1,5 +1,5 @@
 body {
-    background: #5A5766;
+    background: #242424;
     min-height: 100vh;
     text-align: center;
     
@@ -16,7 +16,7 @@ a {
     color: #EDFFEC;
     font-family: "Lato", sans-serif;
     padding: 8px;
-    background-color: #48435C;
+    background-color: #242424;
     text-decoration: none;
 }
 
@@ -35,7 +35,7 @@ p {
 
 p a {
     color: #61E786;
-    background-color: #5A5766;
+    background-color: #242424;
     padding: 0px;
 }
 

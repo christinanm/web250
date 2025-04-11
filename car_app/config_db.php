@@ -1,5 +1,32 @@
 <?php
 
+/*
+
+if ($_SERVER['HTTP_HOST'] === 'localhost') {
+
+//code for localhost 
+
+echo n12br ("This is localhost")
+$dbuser = 'root';
+$dbpass = '';
+$dbhost = 'localhost'
+
+} else {
+ 
+//code for Infinityfree
+
+echo n12br ("This is not localhost")
+$dbuser = '';
+$dbpass = '';
+$dbhost = 'localhost'
+
+}
+
+*/
+
+
+
+
 $local = true;
 if ($local == true) {
     $dbuser = 'root';
