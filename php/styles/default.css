@@ -33,6 +33,7 @@ main p {
 p {
     color: #9792e3; 
     font-family: "Lato", sans-serif;
+    font-size: 18px;
 }
 
 p a {
@@ -60,7 +61,7 @@ ul {
     padding: 0;
     color: #9792e3;
     font-family: "Inter", serif;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 nav li {
@@ -71,14 +72,14 @@ nav li {
 figcaption {
     color: #61E786;
     font-family: "Inter", serif;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 ol {
     color: #9792e3; 
     list-style-type: none;
     font-family: "Inter", serif;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .introduction {
