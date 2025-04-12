@@ -1,5 +1,5 @@
 body {
-    background: #242424;
+    background: #202020;
     min-height: 100vh;
     text-align: center;
     
@@ -15,8 +15,8 @@ h1, h2 {
 a {
     color: #EDFFEC;
     font-family: "Lato", sans-serif;
-    padding: 8px;
-    background-color: #242424;
+    padding: 15px;
+    background-color: #3f3f3f;
     text-decoration: none;
 }
 
@@ -24,8 +24,10 @@ a:hover {
     color: #61E786;
 }
 
-#home {
-    text-align: center;
+main p {
+    width: max-width;
+    margin: 0 auto;
+    font-size: 18px;
 }
 
 p {
@@ -49,6 +51,7 @@ footer {
     text-align: center;
     position: sticky;
     top: 100%;
+    font-size: 18px;
 }
 
 ul {
@@ -57,9 +60,10 @@ ul {
     padding: 0;
     color: #9792e3;
     font-family: "Inter", serif;
+    font-size: 18px;
 }
 
-li {
+nav li {
     display: inline;
     font-family: "Lato", sans-serif;
 }
@@ -67,10 +71,14 @@ li {
 figcaption {
     color: #61E786;
     font-family: "Inter", serif;
+    font-size: 18px;
 }
 
 ol {
     color: #9792e3; 
+    list-style-type: none;
+    font-family: "Inter", serif;
+    font-size: 18px;
 }
 
 .introduction {
