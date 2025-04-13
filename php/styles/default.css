@@ -2,14 +2,12 @@ body {
     background: #202020;
     min-height: 100vh;
     text-align: center;
-    
 }
 
 h1, h2 {
     color: #9792E3;
     font-family: "Roboto", serif;
     text-align: center;
-
 }
 
 a {
@@ -59,15 +57,78 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    color: #E2A3C7;
+    font-family: "Inter", serif;
+    font-size: 18px;
+}
+
+ol {
+    color: #E2A3C7; 
+    list-style-type: none;
+    font-family: "Inter", serif;
+    font-size: 18px;
+}
+
+.introduction {
+    display: table;
+    margin: 0 auto;
+    text-align: left;
+    max-width: 600px;
+}
+
+/* ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     color: #9792e3;
     font-family: "Inter", serif;
     font-size: 20px;
+} */
+
+/* ul {
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
 }
+  
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+    
+ul li ul.dropdown-nav li {
+    display: block;
+}
+    
+ul li ul.dropdown-nav {
+      width: 100%;
+      position: absolute;
+      background: #0463ca;
+      z-index: 999;
+      display: none;
+}
+    
+ul li a:hover {
+      background: #112c66; 
+}
+    
+ul li:hover ul.dropdown-nav {
+      display: block; 
+}
+
+*/
 
 nav li {
     display: inline;
     font-family: "Lato", sans-serif;
-}
+} 
 
 figcaption {
     color: #61E786;
@@ -75,12 +136,6 @@ figcaption {
     font-size: 20px;
 }
 
-ol {
-    color: #9792e3; 
-    list-style-type: none;
-    font-family: "Inter", serif;
-    font-size: 20px;
-}
 
 .introduction {
     display: table;
@@ -97,3 +152,9 @@ main, img, figcaption {
     max-width: 600px;
   }
 
+
+.introduction li {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #444;
+}

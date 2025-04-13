@@ -5,7 +5,7 @@
     <meta name = "viewport" content="width=device-width, initial-scale=1">
     <title>Christina Mekheil's Capricious Mongoose ✧ WEB250 ✧ Contract </title> <!-- change depending on page-->
     <link rel="stylesheet" href="./styles/default.css">
-	<link rel="icon" type="image/x-icon" href="./images/favicon.ico"> <!-- create/change favicon later-->
+	<link rel="icon" type="image/x-icon" href="/images/favicon.ico"> <!-- create/change favicon later-->
     <!-- <link href="https://fonts.googleapis.com/"
     rel="stylesheet"> pick fonts later --> 
     <script src="https://lint.page/kit/880bd5.js" crossorigin="anonymous"></script>
