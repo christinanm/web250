@@ -26,6 +26,7 @@ main p {
     width: max-width;
     margin: 0 auto;
     font-size: 18px;
+    color: #9792e3; 
 }
 
 p {
@@ -35,7 +36,7 @@ p {
 }
 
 p a {
-    color: #61E786;
+    color: #9792e3; 
     background-color: #242424;
     padding: 0px;
 }
@@ -53,21 +54,24 @@ footer {
     font-size: 18px;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    color: #E2A3C7;
+
+ol {
+    color: #9792e3; 
     font-family: "Inter", serif;
     font-size: 18px;
 }
 
-ol {
-    color: #E2A3C7; 
+
+
+/* ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: #9792e3; 
     font-family: "Inter", serif;
     font-size: 18px;
 }
+    
 
 .introduction {
     display: table;
@@ -158,3 +162,40 @@ main, img, figcaption {
     padding-bottom: 10px;
     border-bottom: 1px solid #444;
 }
+
+/* fizz buzz */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0 auto;
+    max-width: 900px; 
+    color: #9792e3;
+    font-family: "Inter", serif;
+}
+
+legend {
+    font-size: 25px;
+}
+
+label {
+    font-size: 20px;
+    margin-bottom: 4px;
+    color: #9792e3;
+}
+  
+  .buttons {
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+  
+  button{
+    background-color: #9792e3;
+    color: #202020;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }

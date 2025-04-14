@@ -40,6 +40,9 @@
         <li><a href="./joy/samsusedcars.html">Sam's Used Cars </a></li> 
         <li><a href=" ../car_app/">Capricious Mongoose's Used Cars </a></li> 
         <li><a href="./business_card.html">Business Card</a></li>
+        <li><a href="./fizzbuzztest.php">Fizz Buzz</a></li>
+        <li><a href="./introform.php">Intro Form</a></li>
+        
     </ul>
     </nav>
 </header>

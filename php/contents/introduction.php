@@ -1,10 +1,10 @@
 <figure>
-				<img src="images/best_friends.png" alt="My cat and I">
-				<figcaption><i>Hanging out with my cat!</i></figcaption>
-			</figure>
-				<br>
-				<ol class="introduction">
-						<li><strong>Personal Backgroud:</strong> I was born and raised in New Jersey, and I’ve been a resident of Charlotte for about 3 years now! I currently work as an IT Support Technician. </li>
+	<img src="images/best_friends.png" alt="My cat and I">
+	<figcaption><i>Hanging out with my cat!</i></figcaption>
+</figure>
+<br>
+	<ol class="introduction">
+		<li><strong>Personal Backgroud:</strong> I was born and raised in New Jersey, and I’ve been a resident of Charlotte for about 3 years now! I currently work as an IT Support Technician. </li>
 
 						<li><strong>Academic Background:</strong>  I am currently in the AAS program for Full-Stack Programming, which I hope to complete this upcoming year. I’m considering completing an AA degree as well in case I decide on transferring to a 4-year degree, but I’m not sure yet.</li>
 

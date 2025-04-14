@@ -11,10 +11,16 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #282b2b;
     background: radial-gradient(circle,rgba(40, 43, 43, 1) 0%, rgba(75, 79, 78, 1) 0%, rgba(127, 143, 135, 1) 50%, rgba(255, 255, 255, 1) 100%);
     /* background-image: url("images/desk.jpg");
     background-size: cover; */
+}
+
+a {
+    color: black;
+    font-family: "Lato", sans-serif;
+    padding: 15px;
+    text-decoration: underline;
 }
 
 .card {
@@ -55,22 +61,31 @@ body {
 }
 
 .front img {
-    width: 400px;
+    width: 350px;
+    margin-top: -10px;
 }
 
-h1, h3 {
-    font-size: 20px;
+h1 {
+    font-size: 17px;
     color: #232020;
     letter-spacing: 1px;
-    margin-top: -15px;
+    margin-top: -10px;
+}
+
+h3 {
+    color: #232020;
+    letter-spacing: 1px;
+    margin-top: -10px;
 }
 
 h4 {
     text-align: center;
+    padding-top: 10px;
 }
 
 a {
     color: #232020;
+    padding-top: 10px;
 }
 
 .col-1 {
@@ -130,4 +145,5 @@ a {
     font-size: 18px;
     font-weight: 500;
     margin: 5px 0;
+    font-size: 15px;
 }
