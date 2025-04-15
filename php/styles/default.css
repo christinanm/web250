@@ -1,5 +1,5 @@
 body {
-    background: #202020;
+    background: #160020 ;
     min-height: 100vh;
     text-align: center;
 }
@@ -154,7 +154,7 @@ main, img, figcaption {
     margin: 0 auto;
     text-align: left;
     max-width: 600px;
-  }
+}
 
 
 .introduction li {
@@ -185,7 +185,7 @@ label {
     color: #9792e3;
 }
   
-  .buttons {
+.buttons {
     justify-content: flex-end;
     gap: 1rem;
   }
@@ -199,3 +199,19 @@ label {
     font-weight: bold;
     cursor: pointer;
   }
+
+#fizzbuzzlist2 {
+    max-height: 250px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 20px;
+    display: block;         /* Make sure it's not flex */
+    width: 100%;            /* Let it take the full width of the container */
+    box-sizing: border-box; /* Includes padding in the width */
+    list-style-type: decimal; /* This brings back the numbers */
+    padding-left: 40px;       /* Adds space so the numbers aren’t cut off */
+    text-align: center;
+    list-style-position: inside;
+}

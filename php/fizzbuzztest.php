@@ -32,7 +32,7 @@
         <label>Count: <input type="number" name="count" value="111"></label><br><br>
 
         <button type="submit" name="submit">Submit</button>
-        <button type="reset">Reset</button>
+        <button type="button" onclick="window.location.href=window.location.pathname">Reset</button>
       </fieldset>
     </form>
 
@@ -49,6 +49,7 @@
         $div3 = (int)$_POST["div3"];
         $defaultWord = trim($_POST["defaultword"]);
         $count = (int)$_POST["count"];
+        
 
         if (!$firstName || !$lastName) {
           echo "<p style='color: red;'>Please enter both your first and last names.</p>";
@@ -58,21 +59,25 @@
           $greeting .= "$lastName!";
           echo "<h2>$greeting</h2>";
           echo "<ol id='fizzbuzzlist2'>";
+          
 
           for ($i = 1; $i <= $count; $i++) {
-            $text = "";
+            $words = [];
 
-            if ($i % $div1 === 0) $text .= $word1;
-            if ($i % $div2 === 0) $text .= $word2;
-            if ($i % $div3 === 0) $text .= $word3;
-
-            if (empty($text)) $text = $defaultWord;
-
-            echo "<li>" . htmlspecialchars(trim($text)) . "</li>";
+            if ($i % $div1 === 0) $words[] = $word1;
+            if ($i % $div2 === 0) $words[] = $word2;
+            if ($i % $div3 === 0) $words[] = $word3;
+        
+            $text = count($words) > 0 ? implode(" ", $words) : $defaultWord;
+        
+            echo "<li>" . htmlspecialchars($text) . "</li>";
           }
-
+          
           echo "</ol>";
+
+          
         }
+        
       ?>
     <?php endif; ?>
   </main>
