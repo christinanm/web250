@@ -1,6 +1,6 @@
 <figure>
 	<img src="images/best_friends.png" alt="My cat and I">
-	<figcaption><i>Hanging out with my cat!</i></figcaption>
+	<figcaption><i><strong>Hanging out with my cat!</strong></i></figcaption>
 </figure>
 <br>
 	<ol class="introduction">
@@ -16,7 +16,7 @@
 						<li><strong>Courses I'm Taking &#38; Why: </strong>
 							<ol>
 								<li><strong>1. WEB215 - Advanced Markup and Scripting:</strong> I’m taking this course to learn more about front-end mechanics. It’s also required for my AAS program.</li>
-								<li><strong>2. WEB250 - Database Driven Websites:</strong> I’m taking this course to learn how to incorporate SQL into website creation. It’s also required for my AAS program.</li>
+								<li><strong>2. <a href="?p=contract">WEB250</a> - Database Driven Websites:</strong> I’m taking this course to learn how to incorporate SQL into website creation. It’s also required for my AAS program.</li>
 								<li><strong>3. CTS240 - Project Management:</strong> I’m taking this course to learn how to better manage and plan projects. It’s also required for my AAS program. </li> 
 								<li><strong>4. CSC221 - Advanced Python Programming:</strong> I’m taking this course to hone my skills in advanced Python concepts. It’s also required for my AAS program. </li> 
 							</ol>

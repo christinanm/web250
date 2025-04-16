@@ -8,7 +8,26 @@
   <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
 </head>
 <body>
-  <div data-include="../components/header.html"></div>
+<header>
+    <h1>Christina Mekheil's Capricious Mongoose ✧ WEB250 </h1>
+    <nav>
+    <ul>
+        <li><a href="?p=home">Home </a></li> 
+        <li><a href="?p=introduction">Introduction </a></li> 
+        <li><a href="?p=contract">Contract </a></li> 
+        <li><a href="../index.html">Static Site </a></li> 
+        <li><a href="./superduper_static/">Multipage Static </a></li> 
+        <li><a href="./superduper_php/">Multipage PHP </a></li> 
+        <li><a href="./joy/">Joy of PHP </a></li> 
+        <li><a href="./joy/samsusedcars.html">Sam's Used Cars </a></li> 
+        <li><a href=" ../car_app/">Capricious Mongoose's Used Cars </a></li> 
+        <li><a href="./business_card.html">Business Card</a></li>
+        <li><a href="./fizzbuzztest.php">Fizz Buzz</a></li>
+        <li><a href="./introform.php">Intro Form</a></li>
+        
+    </ul>
+    </nav>
+</header>
   <main>
     <h2 id="greeting">Fizz Buzz</h2>
 

@@ -7,15 +7,23 @@
     <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
     <meta name = "viewport" content = "width = device-width, initial=scale = 1.0">
     <title>WEB250 Business Card</title>
-    <link rel = "stylesheet" href = "styles/business_card.css">
+    <script src="https://lint.page/kit/880bd5.js" crossorigin="anonymous"></script>
 
+</head>
     <style>
-      * {
+
+html {
     margin: 0;
     padding: 0;
     font-family: "Montserrat", sans-serif;
     box-sizing: border-box;
     transition: all 0.5s linear;
+}
+
+img, div, section {
+    box-sizing: inherit;
+    transition: all 0.5s linear;
+    font-family: inherit;
 }
 
 body {
@@ -24,8 +32,11 @@ body {
     align-items: center;
     min-height: 100vh;
     background: radial-gradient(circle,rgba(40, 43, 43, 1) 0%, rgba(75, 79, 78, 1) 0%, rgba(127, 143, 135, 1) 50%, rgba(255, 255, 255, 1) 100%);
-    /* background-image: url("images/desk.jpg");
-    background-size: cover; */
+    background-image: url("images/desk.jpg");
+    background-size: cover; 
+    box-sizing: inherit;
+    transition: all 0.5s linear;
+    font-family: inherit;
 }
 
 a {
@@ -42,18 +53,39 @@ a {
     border-radius: 10px;
 }
 
+.card .front,
+.card .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-box-shadow: -1px 1px 19px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 19px 3px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 19px 3px rgba(0,0,0,0.75);
+    backface-visibility: hidden;
+    transition: transform 0.5s ease-out;
+}
+
 .card:hover .back {
     transform: rotateY(0deg);
+    -webkit-box-shadow: -1px 1px 19px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 19px 3px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 19px 3px rgba(0,0,0,0.75);
 
 }
 
 .card:hover .front {
     transform: rotateY(180deg);
+    -webkit-box-shadow: -1px 1px 19px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 19px 3px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 19px 3px rgba(0,0,0,0.75);
 }
 
 .back {
     backface-visibility: hidden;
     transform: rotateY(180deg);
+    -webkit-box-shadow: -1px 1px 19px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 19px 3px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 19px 3px rgba(0,0,0,0.75);
     transition: 0.5s;
     background: #f0e3ce;
 }
@@ -68,6 +100,9 @@ a {
     text-align: center;
     backface-visibility: hidden;
     transform: rotateY(0deg);
+    -webkit-box-shadow: -1px 1px 19px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 19px 3px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 19px 3px rgba(0,0,0,0.75);
     transition: 0.5s ease-out;
     z-index: 2;
 }
@@ -81,23 +116,57 @@ h1 {
     font-size: 17px;
     color: #232020;
     letter-spacing: 1px;
-    margin-top: -10px;
+    margin-top: 400px;
+    justify-content: center;
+    text-align: center;
+    text-shadow: 1px 1px 1px black, 0 0 12px white;
+    box-sizing: inherit;
+    transition: all 0.5s linear;
+    font-family: inherit;
+}
+
+h1 a {
+    text-decoration: none;
+}
+
+h1 a:hover {
+    color:#f0e3ce;
+    transition: ease-out 0.5s;
 }
 
 h3 {
     color: #232020;
     letter-spacing: 1px;
     margin-top: -10px;
+    box-sizing: inherit;
+    transition: all 0.5s linear;
+    font-family: inherit;
+}
+
+p {
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 2px 0;
+    box-sizing: inherit;
+    transition: all 0.5s linear;
+    font-family: inherit;
 }
 
 h4 {
     text-align: center;
     padding-top: 10px;
+    box-sizing: inherit;
+    transition: all 0.5s linear;
+    font-family: inherit;
 }
 
 a {
     color: #232020;
     padding-top: 10px;
+    box-sizing: inherit;
+    transition: all 0.5s linear;
+    font-family: inherit;
 }
 
 .col-1 {
@@ -113,12 +182,6 @@ a {
     margin-top: 90px;
     margin-left: 40px;
 }
-
-.col-1 h2 {
-    font-size: 20px;
-    margin-top: -20px;
-}
-
  
 .col-2 {
     width: 440px;
@@ -152,27 +215,18 @@ a {
     text-shadow: 0 0 0 black;
 }
 
-.content h3 {
-    color: #000;
-    font-size: 18px;
-    font-weight: 500;
-    margin: 5px 0;
-    font-size: 15px;
-}
-
     </style>
-</head>
 
 <body>
   <div class = "card">
       <div class = "front">
 
-          <img src = "images/logo.png">
+          <img src = "images/logo.png" alt="Christina's Consulting Mascot, a black cat, looking at a laptop">
           
       </div>
       <div class = "back">
           <div class = "col-1">
-              <img src = "images/face.svg" alt = "">
+              <img src = "images/face.png" alt = "Christina's Consulting's logo, a black cat">
           </div>
 
           <div class = "col-2">
@@ -183,10 +237,10 @@ a {
                     <div class = "content">
                      <br>
 
-                      <h3>☏ // (704) 867-5309</h3>
-                      <h3>✉ // christinamekheil@gmail.com</h3> 
-                      <h3>💻︎ // christinam.github.io</h3>
-                      <h3>🏠︎ // 705 Main Street, Charlotte NC 28212</h3>
+                      <p>☏ // (704) 867-5309</p>
+                      <p>✉ // christinamekheil@gmail.com</p> 
+                      <p>💻︎ // christinam.github.io</p>
+                      <p>🏠︎ // 705 Main Street, Charlotte NC 28212</p>
 
               </div>
 
@@ -195,10 +249,9 @@ a {
           </div>
 
       </div>
-      <h4><a href="./index.php">Go Back</a></h4>
+      <h1><a href="./index.php">Go Back</a></h1>
   </div>
-</body>
 
-              
+</body>
 
 </html>

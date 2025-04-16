@@ -1,4 +1,18 @@
 <?php
+	 if (isset( $_GET["p"])) {
+		 $pageName = $_GET["p"] . ".php";
+		 $pageTitle = ucfirst($_GET["p"]);
+	 }
+	 else {
+		 $pageName = "home.php";
+         $pageTitle = "Home";
+	 }
+
+	 $pagePath ="contents/$pageName";
+?>
+
+
+<?php
 // Default data
 $defaults = [
     'image' => 'images/best_friends.png',
@@ -27,6 +41,25 @@ $data = $_SERVER["REQUEST_METHOD"] === "POST" ? $_POST : $defaults;
     <link rel="stylesheet" href="./styles/default.css">
 </head>
 <body>
+<header>
+    <h1>Christina Mekheil's Capricious Mongoose ✧ WEB250 </h1>
+    <nav>
+    <ul>
+        <li><a href="?p=home">Home </a></li> 
+        <li><a href="?p=introduction">Introduction </a></li> 
+        <li><a href="?p=contract">Contract </a></li> 
+        <li><a href="../index.html">Static Site </a></li> 
+        <li><a href="./superduper_static/">Multipage Static </a></li> 
+        <li><a href="./superduper_php/">Multipage PHP </a></li> 
+        <li><a href="./joy/">Joy of PHP </a></li> 
+        <li><a href="./joy/samsusedcars.html">Sam's Used Cars </a></li> 
+        <li><a href=" ../car_app/">Capricious Mongoose's Used Cars </a></li> 
+        <li><a href="./business_card.html">Business Card</a></li>
+        <li><a href="./fizzbuzztest.php">Fizz Buzz</a></li>
+        <li><a href="./introform.php">Intro Form</a></li> 
+    </ul>
+    </nav>
+</header>
     <h2>Introduction</h2>
 
     <!-- Display intro section -->
@@ -52,6 +85,7 @@ $data = $_SERVER["REQUEST_METHOD"] === "POST" ? $_POST : $defaults;
             <li><strong>Funny/Interesting Fact About Me:</strong> <?= htmlspecialchars($data['fact']) ?></li>
         </ol>
     </main>
+    
 
     <hr>
 
@@ -75,5 +109,22 @@ $data = $_SERVER["REQUEST_METHOD"] === "POST" ? $_POST : $defaults;
 
         <button type="submit">Update My Intro</button>
     </form>
+    <footer>
+    <br> 
+    <nav>
+    <ul>
+        <li><a href="https://github.com/christinanm" target="_blank" rel="noopener noreferrer">GitHub </a></li> 
+        <li><a href="https://christinanm.github.io/" target="_blank" rel="noopener noreferrer">GitHub.io </a></li> 
+        <li><a href="https://christinanm.github.io/web215/" target="_blank" rel="noopener noreferrer">WEB215.io </a></li> 
+        <li><a href="https://christinanm.github.io/web250/" target="_blank" rel="noopener noreferrer">WEB250.io </a> </li> 
+        <li><a href="https://www.freecodecamp.org/christinamekheil" target="_blank" rel="noopener noreferrer">freeCodeCamp </a></li> 
+        <li><a href="https://www.codecademy.com/profiles/cmekhei0" target="_blank" rel="noopener noreferrer">Codecademy </a></li> 
+        <li><a href="https://jsfiddle.net/u/christinanm/fiddles/" target="_blank" rel="noopener noreferrer">JSFiddle </a></li> 
+        <li><a href="https://www.linkedin.com/in/christina-mekheil/" target="_blank" rel="noopener noreferrer">LinkedIn </a></li>
+    </ul>
+    </nav>
+    <br>
+    <small>Designed by <i><a href = "./business_card.html">Christina's Consulting</a></i> &copy;2025 </small>
+		</footer>
 </body>
 </html>

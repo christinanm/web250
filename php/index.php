@@ -65,7 +65,7 @@
     </ul>
     </nav>
     <br>
-    <small>Website designed by <i>Christina Mekheil</i> &copy;2025 </small>
+    Designed by <i><a href = "./business_card.html">Christina's Consulting</a></i> &copy;2025
 		</footer>
 		<!-- <script src="/scripts/script.js"></script> -->
 		
