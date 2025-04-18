@@ -1,7 +1,17 @@
 <?php
 	 if (isset( $_GET["p"])) {
 		 $pageName = $_GET["p"] . ".php";
-		 $pageTitle = ucfirst($_GET["p"]);
+		 $titles = [
+            'home' => 'Home',
+            'introduction' => 'Introduction',
+            'contract' => 'Contract',
+            'fizz_buzz' => 'Fizz Buzz',
+            'intro_form' => 'Intro Form',
+            'business_card' => 'Business Card',
+            // add more mappings if needed
+        ];
+        
+        $pageTitle = $titles[$_GET["p"]] ?? ucfirst(str_replace('_', ' ', $_GET["p"]));
 	 }
 	 else {
 		 $pageName = "home.php";
@@ -28,23 +38,27 @@
 <body>
     <header>
     <h1>Christina Mekheil's Capricious Mongoose ✧ WEB250 </h1>
-    <nav>
     <ul>
         <li><a href="?p=home">Home </a></li> 
         <li><a href="?p=introduction">Introduction </a></li> 
-        <li><a href="?p=contract">Contract </a></li> 
+        <li><a href="?p=contract">Contract </a></li>   
         <li><a href="../index.html">Static Site </a></li> 
-        <li><a href="./superduper_static/">Multipage Static </a></li> 
-        <li><a href="./superduper_php/">Multipage PHP </a></li> 
-        <li><a href="./joy/">Joy of PHP </a></li> 
-        <li><a href="./joy/samsusedcars.html">Sam's Used Cars </a></li> 
-        <li><a href=" ../car_app/">Capricious Mongoose's Used Cars </a></li> 
         <li><a href="./business_card.html">Business Card</a></li>
-        <li><a href="./fizzbuzztest.php">Fizz Buzz</a></li>
-        <li><a href="./introform.php">Intro Form</a></li>
-        
-    </ul>
-    </nav>
+        <li><a href="?p=fizz_buzz">Fizz Buzz</a></li>
+        <li><a href="?p=intro_form">Intro Form</a></li>
+
+            <li>
+            <a href="#">External Sites &#x25BE; </a>
+            <ul class="dropdown-nav">
+                <li><a href="./superduper_static/">Multipage Static </a></li> 
+                <li><a href="./superduper_php/">Multipage PHP </a></li> 
+                <li><a href="./joy/">Joy of PHP </a></li> 
+                <li><a href="./joy/samsusedcars.html">Sam's Used Cars </a></li> 
+                <li><a href=" ../car_app/">Capricious Mongoose's Used Cars </a></li> 
+            </ul>
+            </li>
+
+        </ul>
 </header>
 		<main>
 			<h2><?php echo ($pageTitle)?></h2>
@@ -52,7 +66,7 @@
 		</main>
 		<footer>
     <br> 
-    <nav>
+    
     <ul>
         <li><a href="https://github.com/christinanm" target="_blank" rel="noopener noreferrer">GitHub </a></li> 
         <li><a href="https://christinanm.github.io/" target="_blank" rel="noopener noreferrer">GitHub.io </a></li> 
@@ -63,7 +77,7 @@
         <li><a href="https://jsfiddle.net/u/christinanm/fiddles/" target="_blank" rel="noopener noreferrer">JSFiddle </a></li> 
         <li><a href="https://www.linkedin.com/in/christina-mekheil/" target="_blank" rel="noopener noreferrer">LinkedIn </a></li>
     </ul>
-    </nav>
+    
     <br>
     Designed by <i><a href = "./business_card.html">Christina's Consulting</a></i> &copy;2025
 		</footer>

@@ -1,5 +1,5 @@
 body {
-    background: #160020 ;
+    background: #160020;
     min-height: 100vh;
     text-align: center;
 }
@@ -8,20 +8,22 @@ h1, h2 {
     color: #9792E3;
     font-family: "Roboto", serif;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
 }
 
 nav a {
     color: #EDFFEC;
     font-family: "Lato", sans-serif;
-    padding: 15px;
+    padding: 10px;
+    margin: 0;
     background-color: #3f3f3f;
     text-decoration: none;
 }
 
-a {
+nav a:hover {
     color: #61E786;
 }
+
 
 a:hover {
     color: #EDFFEC;
@@ -56,13 +58,13 @@ p a {
 
 p a:hover {
     color: #EDFFEC; 
+    transition: ease-out 0.4s;
 }
 
 footer {
-    color: #61E786;
+    color: #61E786; 
     font-family: "Inter", serif;
     text-align: center;
-    padding-top: 100px;
     padding: 70px;
 }
 
@@ -72,8 +74,13 @@ footer a {
 }
 
 footer a:hover {
-    color: #61E786;
+    color: #61E786; 
+    transition: ease-out 0.4s;
 }
+
+footer ul li a:hover {
+    background: #61E786; 
+  }
 
 ol {
     color: #9792e3; 
@@ -82,25 +89,73 @@ ol {
     list-style-type: none;
 }
 
+ol a {
+   color: #61E786; 
+   transition: ease-out 0.4s;
+}
 
 
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    color: #fff; 
     font-family: "Inter", serif;
     font-size: 18px;
 }
-    
 
+ul {
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+}
+  
+ul li {
+    display: inline-block;
+    position: relative;
+    background-color: #2a013d;
+    border-radius: 5px;
+  }
+  
+  ul li a {
+  display: block;
+  padding: 15px 15px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  color: #fff; 
+  transition: ease-out 0.4s;
+  background-color: #2a013d;
+  border-radius: 5px;
+  }
+  
+ul li ul.dropdown-nav li {
+    display: block;
+    border-radius: 0px;
+  }
+  
+ul li ul.dropdown-nav {
+    width: 100%;
+    position: absolute;
+    background-color: #160020;
+    z-index: 999;
+    display: none;
+    border-radius: 0px;
+  }
+  
+ul li a:hover {
+    background: #61E786; 
+    color: #2a013d;
+  }
+  
+ul li:hover ul.dropdown-nav {
+    display: block; 
+  }
+    
 .introduction {
     display: table;
     margin: 0 auto;
     text-align: left;
     max-width: 600px;
 }
-
 
 nav li {
     display: inline;
@@ -111,8 +166,9 @@ figcaption {
     color: #61E786;
     font-family: "Inter", serif;
     font-size: 20px;
+    font-style: italic;
+    font-style: bold;
 }
-
 
 main, img, figcaption {
     display: table;
@@ -120,6 +176,7 @@ main, img, figcaption {
     text-align: left;
     max-width: 600px;
 }
+
 
 
 /* fizz buzz */
@@ -136,6 +193,7 @@ form {
 
 legend {
     font-size: 25px;
+    color: #61E786;
 }
 
 label {

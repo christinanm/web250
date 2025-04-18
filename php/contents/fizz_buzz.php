@@ -1,37 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Christina Mekheil's Capricious Mongoose ✧ WEB250 ✧ Fizz Buzz</title>
-  <link rel="stylesheet" href="./styles/default.css">
-  <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
-</head>
-<body>
-<header>
-    <h1>Christina Mekheil's Capricious Mongoose ✧ WEB250 </h1>
-    <nav>
-    <ul>
-        <li><a href="?p=home">Home </a></li> 
-        <li><a href="?p=introduction">Introduction </a></li> 
-        <li><a href="?p=contract">Contract </a></li> 
-        <li><a href="../index.html">Static Site </a></li> 
-        <li><a href="./superduper_static/">Multipage Static </a></li> 
-        <li><a href="./superduper_php/">Multipage PHP </a></li> 
-        <li><a href="./joy/">Joy of PHP </a></li> 
-        <li><a href="./joy/samsusedcars.html">Sam's Used Cars </a></li> 
-        <li><a href=" ../car_app/">Capricious Mongoose's Used Cars </a></li> 
-        <li><a href="./business_card.html">Business Card</a></li>
-        <li><a href="./fizzbuzztest.php">Fizz Buzz</a></li>
-        <li><a href="./introform.php">Intro Form</a></li>
-        
-    </ul>
-    </nav>
-</header>
-  <main>
-    <h2 id="greeting">Fizz Buzz</h2>
-
-    <form id="fizzform" name="fizzbuzz" method="POST" action="">
+<form id="fizzform" name="fizzbuzz" method="POST">
       <fieldset>
         <legend>Fizz Buzz Bang Everything</legend>
 
@@ -51,7 +18,9 @@
         <label>Count: <input type="number" name="count" value="111"></label><br><br>
 
         <button type="submit" name="submit">Submit</button>
-        <button type="button" onclick="window.location.href=window.location.pathname">Reset</button>
+        
+        <?php $currentPage = $_GET["p"] ?? "fizz_buzz"; ?>
+        <button type="button" onclick="window.location.href='?p=<?= $currentPage ?>'">Reset</button>
       </fieldset>
     </form>
 
@@ -99,8 +68,3 @@
         
       ?>
     <?php endif; ?>
-  </main>
-  <div data-include="../components/footer.html"></div>
-  <script src="./scripts/HTMLInclude.min.js"></script>
-</body>
-</html>
