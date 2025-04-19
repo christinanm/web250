@@ -29,7 +29,7 @@
     <meta name = "viewport" content="width=device-width, initial-scale=1">
     <title>Christina Mekheil's Capricious Mongoose ✧ WEB250 ✧ <?php echo $pageTitle ?></title>
     <link rel="stylesheet" href="./styles/default.css">
-	<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     <!-- <link href="https://fonts.googleapis.com/"
     rel="stylesheet"> pick fonts later --> 
 
@@ -42,7 +42,6 @@
         <li><a href="?p=home">Home </a></li> 
         <li><a href="?p=introduction">Introduction </a></li> 
         <li><a href="?p=contract">Contract </a></li>   
-        <li><a href="../index.html">Static Site </a></li> 
         <li><a href="./business_card.html">Business Card</a></li>
         <li><a href="?p=fizz_buzz">Fizz Buzz</a></li>
         <li><a href="?p=intro_form">Intro Form</a></li>
@@ -50,6 +49,7 @@
             <li>
             <a href="#">External Sites &#x25BE; </a>
             <ul class="dropdown-nav">
+                <li><a href="../index.html">Static Site </a></li>
                 <li><a href="./superduper_static/">Multipage Static </a></li> 
                 <li><a href="./superduper_php/">Multipage PHP </a></li> 
                 <li><a href="./joy/">Joy of PHP </a></li> 
