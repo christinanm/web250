@@ -28,13 +28,11 @@ $query = "INSERT INTO inventory
 // Print the query to the browser so you can see it
 echo ($query. "<br>");
 
-include 'db.php';
-
-  echo 'Connected successfully to mySQL. <BR>'; 
+include 'dbconfig.php';
   
 //select a database to work with
-$mysqli->select_db("Cars");
-   Echo ("Selected the Cars database. <br>");
+//$mysqli->select_db("Cars");
+  // Echo ("Selected the Cars database. <br>");
 
 /* Try to insert the new car into the database */
 if ($result = $mysqli->query($query)) {

@@ -28,7 +28,7 @@ VIN='$VIN'";
 // Print the query to the browser so you can see it
 echo ($query. "<br>");
 
-include 'db.php';
+include 'dbconfig.php';
 /* check connection */
 if (mysqli_connect_errno()) {
  echo ("Connection failed: ". $mysqli->error."<br>");
@@ -38,8 +38,8 @@ if (mysqli_connect_errno()) {
  echo 'Connected successfully to mySQL. <BR>';
 
 //select a database to work with
-$mysqli->select_db("Cars");
- Echo ("Selected the Cars database. <br>");
+//$mysqli->select_db("Cars");
+ //Echo ("Selected the Cars database. <br>");
 
 /* Try to insert the new car into the database */
 if ($result = $mysqli->query($query)) {

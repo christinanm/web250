@@ -53,15 +53,11 @@ machine.&nbsp; Here are the links to get started.&nbsp; </p>
 <a href="phpinfo.php" target="_blank">PHP Info Paget</a></p>
 <p>A really simple PHP page --&gt; <a href="simple.php">simple.php</a></p>
 <h2>Database Related Scripts</h2>
-<p><a href="CreateDB.php">Create the Cars Database</a> (Before you can use this, 
-you'll need to edit line 8 with your username and password)</p>
-
+<p><a href="CreateDB.php">Create the Cars Database, and the Inventory and Images tables</a> 
 <p><a href="ModifyDB.php">Modify the Inventory Table</a> (This script adds the
 <strong>Primary_Image</strong> column.&nbsp; Again, edit line 8 with your 
 username and password)</p>
-<p><a href="CreateImagesTable.php">Create the Images Table</a> (Again, edit line 
-8 with your username and password)</p>
-<p><img alt="Joy of PHP" height="313" src="smallcover.jpg" width="196" /></p>
+
 
 </body>
 

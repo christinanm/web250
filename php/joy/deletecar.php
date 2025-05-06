@@ -7,23 +7,21 @@
 
 <h1>Sam's Used Cars</h1>
 <?php 
-include 'db.php';
+include 'dbconfig.php';
 $vin = $_GET['VIN'];
-$query = "DELETE FROM INVENTORY WHERE VIN='$vin'";
-echo "$query <BR>";
+$query = "DELETE FROM inventory WHERE VIN='$vin'"; // lowercased inventory
+echo "$query <br>";
+
 /* Try to query the database */
 if ($result = $mysqli->query($query)) {
-   Echo "The vehicle with VIN $vin has been deleted.";
+   echo "The vehicle with VIN $vin has been deleted.";
 }
 else
 {
-    echo "Sorry, a vehicle with VIN of $vin cannot be found " . mysql_error()."<br>";
+    echo "Sorry, a vehicle with VIN of $vin cannot be found " . $mysqli->error . "<br>"; // fixed error reporting
 }
 
 $mysqli->close();
-   
 ?>
-
 </body>
-
 </html>
